@@ -1,0 +1,25 @@
+TrayIconKit
+===========
+
+Introduction
+------------
+TrayIconKit is a GNUstep framework that provides simple access to a system tray,
+i.e. it allows to create tray icons from within a GNUstep application and hides
+all the nasty X11 details.
+Currently, two types of icons are supported:
+- simple images, displaying an icon and possibly a tooltip
+- buttons, displaying an icon and a tooltip and being able to execute any action
+  when clicked.
+
+This framework is GPL'ed. Read the COPYING file.
+All bugs reports should be sent to Andreas Schik <andreas@schik.de>.
+
+
+How to build TrayIconKit
+------------------------
+o To build TrayIconKit simply do the following:
+	make
+
+o To install TrayIconKit run:
+	make install
+
