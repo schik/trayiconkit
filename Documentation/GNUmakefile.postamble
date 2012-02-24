@@ -1,0 +1,16 @@
+# Rules for installing reference documentation.
+after-install::
+	rm -rf $(REF_DOC_INSTALL_DIR)/TrayIconKit/Reference
+	$(MKDIRS) $(REF_DOC_INSTALL_DIR)/TrayIconKit/Reference
+	(cd Reference; $(TAR) cf - .) | \
+	(cd $(REF_DOC_INSTALL_DIR)/TrayIconKit/Reference; $(TAR) xf -)
+ifneq ($(CHOWN_TO),)
+	$(CHOWN) -R $(CHOWN_TO) $(REF_DOC_INSTALL_DIR)/TrayIconKit/Reference
+endif
+
+after-uninstall::
+	rm -rf $(REF_DOC_INSTALL_DIR)/TrayIconKit
+	-rmdir --ignore-fail-on-non-empty $(REF_DOC_INSTALL_DIR)
+
+after-clean::
+	rm -rf Reference

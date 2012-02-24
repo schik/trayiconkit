@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE gsdoc PUBLIC "-//GNUstep//DTD gsdoc 1.0.3//EN" "http://www.gnustep.org/gsdoc-1_0_3.dtd">
+<gsdoc base="TrayIconKit">
+  <head>
+    <title>Reference Documentation for the TrayIconKit Framework</title>
+    <author name="Andreas Schik">
+      <email address="andreas@schik.de"/>
+    </author>
+    <copy>2011 Andreas Schik</copy>
+
+  </head>
+  <body>
+    <chapter>
+      <p>This document provides an index of all major classes in TrayIconKit.</p>
+      <index type="title" scope="project" target="mainFrame" />
+    </chapter>
+  </body>
+</gsdoc>
