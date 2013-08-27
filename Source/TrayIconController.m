@@ -135,7 +135,7 @@ Atom atomManager;
   systrayWindow = XGetSelectionOwner(display, atomSystemTrayS);
 
   if (systrayWindow != None) {
-    NSDebugLog(@"Selected tray window 0x%x", systrayWindow);
+    NSDebugLog(@"Selected tray window 0x%lx", systrayWindow);
     XSelectInput(display, systrayWindow, StructureNotifyMask);
     // Check whether we have a deferred request for a tray icon
     if (mustCreateTrayIcon == YES) {
